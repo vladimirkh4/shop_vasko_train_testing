@@ -422,7 +422,7 @@ class ProductPage(BasePanel):
                 print("The price of the cheapest product has not changed. Test GOOD")
             else:
                 assert first_price_i > first_product_price_up
-                print("The price of the most expensive product has increased. Test GOOD")
+                print("The price of the cheapest product has increased. Test GOOD")
 
             price_filter_button_num = self.get_quantity_filter_buttons()
             self.click_selected_filter_button(price_filter_button_num)
